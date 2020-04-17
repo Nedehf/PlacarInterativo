@@ -1,5 +1,19 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 body {
-  background-color: rgb(2, 10, 34);
+  background-color: rgb(16, 48, 145);
+  display: flex;
+  justify-content: center;
 }
 html,
 body,
@@ -9,5 +23,70 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lucida Console", "Roboto", Monospace;
+  font-size: large;
+}
+
+.display-bottom-left {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+.display-bottom-right {
+  position: absolute;
+  top: 90%;
+  right: 5%;
+}
+.container-time {
+  width: 1163px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background: #0a86ec;
+  background: -webkit-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
+  background: -o-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
+  background: -moz-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
+  background: linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 90px 130px 88px 148px;
+}
+.container-interno {
+  width: 863px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 90px 130px 88px 148px;
+}
+
+.form-inSize {
+  width: 390px;
+}
+
+.form-title {
+  display: block;
+  font-family: "Lucida Console", "Roboto";
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 44px;
 }
