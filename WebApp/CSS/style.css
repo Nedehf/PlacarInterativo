@@ -79,6 +79,7 @@ h6 {
 
 .form-inSize {
   width: 390px;
+  text-align: left;
 }
 
 .form-title {
@@ -89,4 +90,7 @@ h6 {
   line-height: 1.2;
   text-align: center;
   padding-bottom: 44px;
+}
+.pic {
+  width: 296px;
 }
