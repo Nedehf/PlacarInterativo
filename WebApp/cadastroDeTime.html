@@ -6,55 +6,82 @@
 
     <link rel="icon" type="image/png" href="images/volleyball_PNG.png" />
 
-    <link rel="stylesheet" href="CSS/w3.css" />
     <link rel="stylesheet" href="CSS/style.css" />
 
     <title>Cadastro do Time</title>
   </head>
   <body>
-    <div class="container-time">
-      <div class="container-interno">
-        <div class="pic">
-          <span class="form-title">
-            Get in touch
-          </span>
-        </div>
+    <div class="logo">
+      SCORE BOARD
+    </div>
 
-        <form action="" method="GET" class="form-inSize">
-          <div>
-            <label>Nome </label>
-            <br />
-            <input type="text" name="name" placeholder="GIBA" />
-            <br />
-            <label>Número</label>
-            <br />
-            <input type="number" name="number" placeholder="7" min="1" />
-            <br />
-            <input
-              type="submit"
-              name="submit"
-              value="Submit"
-              class="w3-button w3-round w3-light-grey w3-xlarge"
-            />
+    <div class="container-form">
+      <div class="block">
+        <span class="form-title">
+          Cadastro de Jogadores
+        </span>
+      </div>
+      <div class="block">
+        <form class="my-form">
+          <div class="form-group">
+            <label>Nome: </label>
+            <input type="text" name="nome" />
           </div>
+
+          <div class="form-group">
+            <label>Número: </label>
+            <input type="number" name="numero" />
+          </div>
+
+          <input class="submit-button" type="submit" value="Adicionar" />
         </form>
       </div>
+
+      <!--Table-->
+      <table class="time">
+        <thead>
+          <!--Table Row-->
+          <tr>
+            <!--Table Heading-->
+            <th>Nome</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <!--Table Data-->
+            <td>John Toe</td>
+            <td>25</td>
+          </tr>
+
+          <tr>
+            <td>Jane Doe</td>
+            <td>28</td>
+          </tr>
+
+          <tr>
+            <td>Jackson</td>
+            <td>55</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="display-bottom-right">
-      <a href="cadastroDeJogo.html">
-        <button class="w3-button w3-round w3-white w3-xlarge">
+      <button class="w3">
+        <a href="cadastroDeJogo.html">
           Continuar
-        </button>
-      </a>
+        </a>
+      </button>
     </div>
 
     <div class="display-bottom-left">
-      <a href="index.html">
-        <button class="w3-button w3-round w3-white w3-xlarge">
+      <button class="w3">
+        <a href="index.html">
           Voltar
-        </button>
-      </a>
+        </a>
+      </button>
     </div>
   </body>
 </html>

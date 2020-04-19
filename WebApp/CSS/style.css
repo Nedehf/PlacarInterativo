@@ -1,96 +1,180 @@
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 body {
-  background-color: rgb(16, 48, 145);
-  display: flex;
-  justify-content: center;
-}
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lucida Console", "Roboto", Monospace;
-  font-size: large;
-}
-
-.display-bottom-left {
-  position: absolute;
-  top: 90%;
-  left: 5%;
-}
-.display-bottom-right {
-  position: absolute;
-  top: 90%;
-  right: 5%;
-}
-.container-time {
-  width: 1163px;
-  border-radius: 10px;
-  overflow: hidden;
-
   background: #0a86ec;
-  background: -webkit-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
-  background: -o-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
-  background: -moz-linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
-  background: linear-gradient(315deg, #e9f541, #0a86ec, #cdf5b6);
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 90px 130px 88px 148px;
-}
-.container-interno {
-  width: 863px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 90px 130px 88px 148px;
+  background: -webkit-linear-gradient(left, #1a3fa9, #ffce19);
+  height: 100%;
+  color: #e0e2f7;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  max-height: max-content;
 }
 
-.form-inSize {
-  width: 390px;
-  text-align: left;
+a:active {
+  color: red;
+}
+
+.logo {
+  font-style: italic;
+  color: #ffce19;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px 24px;
+  font-size: 24px;
+}
+
+.button {
+  background-color: #1a3fa9;
+  width: 25%;
+  padding: 1em;
+  font-size: x-large;
+  border: 1px solid #e0e2f7;
+  margin: auto;
+  text-transform: capitalize;
+  letter-spacing: 0.18em;
+  word-spacing: 0.3;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #e0e2f7;
+}
+.button:hover a {
+  color: #000000;
+}
+
+.container {
+  border: none;
+  padding: auto;
+  margin: 40vh auto;
+}
+
+.container-form {
+  background-color: #e0e2f7;
+  color: #a4a6c2;
+  width: 50%;
+  height: auto;
+  border: 0.1em #cccccc;
+  margin: auto;
+  margin-top: 12%;
+  margin-bottom: 6em;
+}
+
+.block {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .form-title {
   display: block;
-  font-family: "Lucida Console", "Roboto";
-  font-size: 24px;
-  color: #333333;
-  line-height: 1.2;
+  font-size: 300%;
+  margin-top: 20%;
   text-align: center;
-  padding-bottom: 44px;
+  line-height: 1em;
+  padding: 10px;
 }
-.pic {
-  width: 296px;
+
+.my-form {
+  padding: 2em;
+}
+
+.my-form .form-group {
+  padding-bottom: 0.5em;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form input[type="number"] {
+  padding: 1em;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #1a3fa9;
+  color: #ffffff;
+  width: 50%;
+  padding: 1em;
+  margin-top: 1em;
+  margin-right: 0%;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  color: #b5d6b2;
+}
+
+.w3 {
+  background-color: #1a3fa9;
+  color: #000;
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #e0e2f7;
+}
+
+.w3:hover {
+  background-color: #e0e2f7;
+}
+
+.w3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.w3:hover a {
+  color: #000000;
+}
+
+.display-bottom-left {
+  position: fixed;
+  bottom: 1em;
+  left: 2em;
+}
+.display-bottom-right {
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+}
+
+.time {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.time td,
+.time th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.time tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.time tr:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+.time th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4b4b4b;
+  color: white;
 }
